@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Екатерина Гришель](https://up.htmlacademy.ru/adaptive/23/user/1398691).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
