@@ -4,54 +4,61 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
-    <header class="page-header">
-        <a class="page-header__logo">
-            <img src="img/logo_pink_header.svg" width="74" height="23" alt="Пинк">
-        </a>
-        <nav class="main-nav">
-            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-            <div class="main-nav__wrapper">
-                <ul class="main-nav__list site-list">
-                    <li class="site-list__item">
-                        <a href="index.html">Главная</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a href="catalog.html">Фотографии</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a href="form.html">Конкурс</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a href="#">HTML Academy</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
+    <div class="background">
+        <header class="page-header">
+            <a class="page-header__logo">
+                <img src="img/logo_pink_header.svg" width="74" height="23" alt="Пинк">
+            </a>
+            <nav class="main-nav">
+                <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+                <div class="main-nav__wrapper">
+                    <ul class="main-nav__list site-list">
+                        <li class="site-list__item">
+                            <a href="index.html">Главная</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a href="catalog.html">Фотографии</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a href="form.html">Конкурс</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a href="#">HTML Academy</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
         <section class="competition">
-            <h1 class="competition__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+            <h1 class="title title--white">Конкурс на самое безбашенное путешествие с Пинк</h1>
         </section>
+    </div>
+    <main>
         <section class="page-form">
-            <h2 class="page-form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
+            <h2 class="page-form__title caption-section">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
             <form class="form" action="https://echo.htmlacademy.ru" method="post">
                 <p class="form__field">
-                    <label class="form__label-user-data caption" for="surname">Фамилия:</label>
+                    <label class="form__label-user-data form-caption" for="surname">Фамилия:</label>
                     <input class="form__input" id="surname" type="text" name="surname" placeholder="Укажите фамилию *" required>
                 </p>
                 <p class="form__field">
-                    <label class="form__label-user-data caption" for="name">Имя:</label>
+                    <label class="form__label-user-data form-caption" for="name">Имя:</label>
                     <input class="form__input" id="name" type="text" name="name" placeholder="Введите ваше имя *" required>
                 </p>
                 <p class="form__field">
-                    <label class="form__label-user-data caption" for="patronymic">Отчество:</label>
+                    <label class="form__label-user-data form-caption" for="patronymic">Отчество:</label>
                     <input class="form__input" id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
                 </p>
-                <fieldset class="form__ieldset">
-                    <legend class="form__legend caption">Ваши безбашенные достижения в путешествии</legend>
+                <fieldset class="form__fieldset">
+                    <legend class="form__legend form-caption">Ваши безбашенные достижения в путешествии</legend>
                     <ul class="form__list">
                         <li class="form__item">
                             <input class="form__item-input" type="checkbox" name="selfie-with-shark" id="selfie-with-shark" value="selfie-with-shark" checked>
@@ -80,15 +87,15 @@
                     </ul>
                 </fieldset>
                 <p class="form__field">
-                    <label class="form__label-user-data caption" for="phone">Номер телефона</label>
-                    <input id="phone" type="text" name="phone" placeholder="Номер, пожалуйста">
+                    <label class="form__label-user-data form-caption" for="phone">Номер телефона</label>
+                    <input class="form__input" id="phone" type="text" name="phone" placeholder="Номер, пожалуйста">
                 </p>
                 <p class="form__field">
-                    <label class="form__label-user-data caption" for="email">Адрес почты</label>
-                    <input id="email" type="email" name="email" placeholder="Введите почту *" required>
+                    <label class="form__label-user-data form-caption" for="email">Адрес почты</label>
+                    <input class="form__input" id="email" type="email" name="email" placeholder="Введите почту *" required>
                 </p>
-                <fieldset class="form__ieldset">
-                    <legend class="form__legend caption">С каким приложением путешествовали?</legend>
+                <fieldset class="form__fieldset">
+                    <legend class="form__legend form-caption">С каким приложением путешествовали?</legend>
                     <ul class="form__list">
                         <li class="form__item">
                             <input class="form__item-input" type="checkbox" name="pink-for-ios" id="pink-for-ios" value="pink-for-ios" checked>
@@ -105,7 +112,7 @@
                     </ul>
                 </fieldset>
                 <p class="form__field">
-                    <label class="form__label-user-data caption" for="emotions">Опишите свои эмоции</label>
+                    <label class="form__label-user-data form-caption" for="emotions">Опишите свои эмоции</label>
                     <input class="form__input form__input--size" id="emotions" type="text" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях">
                 </p>
                 <button class="form__button" type="submit">Отправить форму</button>
