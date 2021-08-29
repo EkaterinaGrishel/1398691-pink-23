@@ -8,35 +8,33 @@
 </head>
 
 <body class="page__body">
-    <div class="background">
-        <header class="page-header">
-            <a class="page-header__logo">
-                <img src="img/logo_pink_header.svg" width="74" height="23" alt="Пинк">
-            </a>
-            <nav class="main-nav">
-                <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-                <div class="main-nav__wrapper">
-                    <ul class="main-nav__list site-list">
-                        <li class="site-list__item">
-                            <a href="index.html">Главная</a>
-                        </li>
-                        <li class="site-list__item">
-                            <a href="catalog.html">Фотографии</a>
-                        </li>
-                        <li class="site-list__item">
-                            <a href="form.html">Конкурс</a>
-                        </li>
-                        <li class="site-list__item">
-                            <a href="#">HTML Academy</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+    <header class="page-header">
+        <a class="page-header__logo" href="index.html">
+            <img src="img/logo_pink_header.svg" width="74" height="23" alt="Пинк">
+        </a>
+        <nav class="main-nav">
+            <button class="main-nav__toggle" type="button"><span class="text-hidden">Открыть меню</span></button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item">
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="catalog.html">Фотографии</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="form.html">Конкурс</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <section class="competition">
             <h1 class="title title--white">Конкурс на самое безбашенное путешествие с Пинк</h1>
         </section>
-    </div>
+    </header>
     <main>
         <section class="page-form">
             <h2 class="page-form__title caption-section">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
@@ -53,7 +51,7 @@
                     <label class="form__label-user-data form-caption" for="patronymic">Отчество:</label>
                     <input class="form__input" id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
                 </p>
-                <fieldset class="form__fieldset">
+                <fieldset class="form__fieldset section-background">
                     <legend class="form__legend form-caption">Ваши безбашенные достижения в путешествии</legend>
                     <ul class="form__list">
                         <li class="form__item">
@@ -90,7 +88,7 @@
                     <label class="form__label-user-data form-caption" for="email">Адрес почты</label>
                     <input class="form__input" id="email" type="email" name="email" placeholder="Введите почту *" required>
                 </p>
-                <fieldset class="form__fieldset">
+                <fieldset class="form__fieldset section-background">
                     <legend class="form__legend form-caption">С каким приложением путешествовали?</legend>
                     <ul class="form__list">
                         <li class="form__item">

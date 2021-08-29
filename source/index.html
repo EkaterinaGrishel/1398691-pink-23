@@ -8,34 +8,32 @@
 </head>
 
 <body class="page__body">
-    <div class="background">
-        <header class="page-header">
-            <a class="page-header__logo">
-                <img src="img/logo_pink_header.svg" width="74" height="23" alt="Пинк">
-            </a>
-            <nav class="main-nav">
-                <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-                <div class="main-nav__wrapper">
-                    <ul class="main-nav__list site-list">
-                        <li class="site-list__item">
-                            <a href=#>Главная</a>
-                        </li>
-                        <li class="site-list__item">
-                            <a href="catalog.html">Фотографии</a>
-                        </li>
-                        <li class="site-list__item">
-                            <a href="form.html">Конкурс</a>
-                        </li>
-                        <li class="site-list__item">
-                            <a href="#">HTML Academy</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <h1 class="visually-hidden">Pink - приложение для яркой жизни</h1>
-        <div class="application__wrapper">
-            <section class="application">
+    <header class="page-header">
+        <a class="page-header__logo" href="index.html">
+            <img src="img/logo_pink_header.svg" width="74" height="23" alt="Пинк">
+        </a>
+        <nav class="main-nav">
+            <button class="main-nav__toggle" type="button"><span class="text-hidden">Открыть меню</span></button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item">
+                        <a href=#>Главная</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="catalog.html">Фотографии</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="form.html">Конкурс</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="application">
+            <h1 class="text-hidden">Pink - приложение для яркой жизни</h1>
+            <div class="application__wrapper">
                 <h2 class="title title--white">Взгляните на жизнь иначе!</h2>
                 <img src="img/phone-in-hand.png" alt="Телефон в руке">
                 <div class="application__footer">
@@ -59,14 +57,14 @@
                     </ul>
                     <p class="application__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
                 </div>
-            </section>
-        </div>
-    </div>
+            </div>
+        </section>
+    </header>
     <main class="page-main">
         <section class="information">
             <div class="information__wrapper">
                 <h2 class="title title--grey">Устали от серости мегаполиса?<br> Нам есть, что вам предложить!</h2>
-                <div class="information-bg-color">
+                <div class="section-background">
                     <ul class="information__list">
                         <li class="information__item">
                             <h3 class="information__title">Поднимает настроение</h3>
@@ -88,7 +86,7 @@
             </div>
         </section>
         <section class="reviews">
-            <h2 class="visually-hidden">Отзывы</h2>
+            <h2 class="text-hidden">Отзывы</h2>
             <div class="reviews__wrapper slider">
                 <div class="reviews__list slider__list">
                     <blockquote class="reviews__item slider__item">
@@ -106,7 +104,7 @@
             </div>
         </section>
         <section class="prices">
-            <h2 class="visually-hidden">Цены</h2>
+            <h2 class="text-hidden">Цены</h2>
             <div class="prices__wrapper slider">
                 <table class="table">
                     <tr>
