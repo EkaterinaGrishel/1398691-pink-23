@@ -1,16 +1,17 @@
 .contacts {
   color: @basik-color;
+  padding: 50px 0 0;
 }
 
 .contacts__item {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
   color: @accent-color;
-  margin-bottom: 35px;
+  max-width: 280px;
 }
 
 .contacts__item-link {
@@ -19,6 +20,8 @@
 
 .contacts__list {
   list-style: none;
+  padding: 0;
+  margin: 0 20px;
 }
 
 .contacts__item-title {
@@ -29,4 +32,27 @@
   font-size: 18px;
   line-height: 25px;
   color: @basik-color;
+}
+
+.contacts__text {
+  padding: 0;
+  margin: 0 0 31px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contacts__item:nth-child(1) {
+    margin-right: 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__item:nth-child(2) {
+    order: 2;
+  }
 }

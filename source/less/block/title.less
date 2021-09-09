@@ -3,12 +3,31 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
+  padding: 0;
+  margin: 0 auto;
 
   &--white {
     color: @light-color;
+    margin: 29px auto 34px;
   }
 
   &--grey {
     color: @basik-color;
+    margin-bottom: 80px;
+  }
+
+  &--margin {
+    margin-bottom: 45px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .title--white {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 48px;
+    margin: 0;
+    max-width: 180px;
   }
 }
