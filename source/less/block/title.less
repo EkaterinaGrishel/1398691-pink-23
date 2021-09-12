@@ -13,21 +13,42 @@
 
   &--grey {
     color: @basik-color;
-    margin-bottom: 80px;
-  }
-
-  &--margin {
     margin-bottom: 45px;
   }
 }
 
 @media (min-width: @tablet-width) {
-  .title--white {
+  .title {
     font-style: normal;
     font-weight: 300;
     font-size: 40px;
     line-height: 48px;
-    margin: 0;
-    max-width: 180px;
+    margin: 0 auto;
+
+    &--white {
+      max-width: 190px;
+    }
+
+    &--grey {
+      margin-bottom: 51px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 68px;
+    margin: 0 auto;
+
+    &--white {
+      max-width: 300px;
+    }
+
+    &--grey {
+      margin-bottom: 61px;
+    }
   }
 }

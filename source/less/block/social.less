@@ -7,12 +7,6 @@
   justify-content: center;
 }
 
-@media (min-width: @tablet-width) {
-  .social__list {
-    margin: 0;
-  }
-}
-
 .social__item {
   border: 3px solid @basik-color-opasity;
   box-sizing: border-box;
@@ -20,9 +14,18 @@
   height: 48px;
   width: 48px;
   line-height: 45px;
-  margin-right: 14px;
+
+  &:not(:last-child) {
+    margin-right: 14px;
+  }
 }
 
 .social__link-title {
   .visually-hidden();
+}
+
+@media (min-width: @tablet-width) {
+  .social__list {
+    margin: 0;
+  }
 }
