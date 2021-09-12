@@ -1,3 +1,33 @@
+.main-nav {
+  background-color: @dark-color-opasity;
+  padding: 22px 0 21px;
+}
+
+.main-nav__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 280px;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+}
+
 .main-nav__button {
   .visually-hidden;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__wrapper {
+    max-width: 620px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    max-width: 940px;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
 }

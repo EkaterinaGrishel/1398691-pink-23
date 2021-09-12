@@ -1,4 +1,25 @@
 .page-header {
-  background: url("../img/back-mobile.jpg") no-repeat;
+  background: url("../img/phone-in-hand-320.png") no-repeat 50% 38%, url("../img/back-mobile.jpg") no-repeat 50% 0;
   background-color: @dark-bg-color;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.page-header__logo {
+  height: 23px;
+  width: 74px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    background: url("../img/phone-in-hand-660.png") no-repeat 50% 100%, url("../img/back-tablet.png") no-repeat 50% 0;
+    background-color: @dark-bg-color;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    background: url("../img/phone-in-hand-1200.png") no-repeat 50% 100%, url("../img/back-desktop.png") no-repeat 50% 0;
+    background-color: @dark-bg-color;
+  }
 }

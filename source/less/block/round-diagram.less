@@ -1,0 +1,63 @@
+.round-diagram {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .round-diagram {
+    display: block;
+  }
+
+  .round-diagram__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 310px;
+    max-width: 620px;
+    padding: 54px 20px 0;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .round-diagram__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    color: @dark-color;
+  }
+
+  .round-diagram__description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .round-diagram__link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: @accent-color;
+  }
+
+  .round-diagram__image {
+    max-width: 238px;
+    grid-column: 1 / 1;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+
+  .round-diagram__image image {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .round-diagram__wrapper {
+    grid-template-columns: 1fr 534px;
+    max-width: 940px;
+  }
+
+  .round-diagram__image {
+    max-width: 298px;
+  }
+}

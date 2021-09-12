@@ -1,10 +1,34 @@
 .information {
-  background-color: @light-color;
+  background-color: @basic-light-color;
+  background-image: linear-gradient(176deg, @light-color 25%, transparent 25%);
+  padding: 70px 0 270px;
+}
+
+.information__wrapper {
+  max-width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
 }
 
 .information__list {
   list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-image: url("../img/information_phone_smiley.png");
+    height: 270px;
+    width: 157px;
+  }
 }
+
 
 .information__title {
   font-style: normal;
@@ -12,6 +36,7 @@
   font-size: 18px;
   line-height: 24px;
   color: @dark-color;
+  margin: 43px auto 24px;
 }
 
 .information__description {
@@ -20,4 +45,82 @@
   font-size: 14px;
   line-height: 24px;
   color: @basik-color;
+}
+
+@media (min-width: @tablet-width) {
+  .information {
+    padding: 46px 0 20px;
+  }
+
+  .information__wrapper {
+    max-width: 620px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .information__title {
+    margin: 43px auto 14px;
+  }
+
+  .information__list {
+    max-width: 310px;
+    text-align: left;
+    padding-left: 310px;
+    margin: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -60px;
+      right: 350px;
+      background-image: url("../img/information_phone_smiley_660.png");
+      height: 487px;
+      width: 268px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .information__wrapper {
+    max-width: 940px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+  }
+
+  .information__list {
+    display: flex;
+    max-width: 940px;
+    text-align: center;
+    padding-left: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .information__item::before {
+    content: "";
+    display: block;
+    height: 332px;
+    width: 186px;
+    margin: 0 auto;
+  }
+
+  .information__mood::before {
+    content: "";
+    background-image: url("../img/phone_mood.png");
+  }
+
+  .information__world::before {
+    content: "";
+    background-image: url("../img/phone_world.png");
+  }
+
+  .information__friends::before {
+    content: "";
+    background-image: url("../img/phone_friends.png");
+  }
 }

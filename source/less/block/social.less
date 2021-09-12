@@ -1,0 +1,31 @@
+.social__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin-top: 41px;
+  margin-bottom: 53px;
+  justify-content: center;
+}
+
+.social__item {
+  border: 3px solid @basik-color-opasity;
+  box-sizing: border-box;
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+  line-height: 45px;
+
+  &:not(:last-child) {
+    margin-right: 14px;
+  }
+}
+
+.social__link-title {
+  .visually-hidden();
+}
+
+@media (min-width: @tablet-width) {
+  .social__list {
+    margin: 0;
+  }
+}

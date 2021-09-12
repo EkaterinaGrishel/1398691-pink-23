@@ -3,12 +3,52 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
+  padding: 0;
+  margin: 0 auto;
 
   &--white {
     color: @light-color;
+    margin: 29px auto 34px;
   }
 
   &--grey {
     color: @basik-color;
+    margin-bottom: 45px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 48px;
+    margin: 0 auto;
+
+    &--white {
+      max-width: 190px;
+    }
+
+    &--grey {
+      margin-bottom: 51px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 68px;
+    margin: 0 auto;
+
+    &--white {
+      max-width: 300px;
+    }
+
+    &--grey {
+      margin-bottom: 61px;
+    }
   }
 }

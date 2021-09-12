@@ -1,7 +1,24 @@
 .prices {
   background-color: @basic-light-color;
+  background-image: linear-gradient(178deg, @light-color 25%, transparent 25%);
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .prices__title {
   .visually-hidden;
+}
+
+.prices__wrapper {
+  max-width: 280px;
+  height: 279px;
+  margin: 0 auto;
+  padding: 10px 20px 10px;
+}
+
+@media (min-width: @tablet-width) {
+  .prices__wrapper {
+    max-width: 620px;
+    padding: 150px 20px 10px;
+  }
 }
