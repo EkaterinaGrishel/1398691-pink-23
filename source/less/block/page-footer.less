@@ -5,23 +5,24 @@
   max-width: 280px;
   margin: 0 auto;
   padding: 40px 20px 51px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 620px;
+    padding: 40px 20px 51px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 940px;
+  }
 }
 
 .page-footer__social {
   padding: 0;
 }
 
-@media (min-width: @tablet-width) {
-  .page-footer__wrapper {
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 620px;
-    padding: 40px 20px 51px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .page-footer__wrapper {
-    max-width: 940px;
-  }
+.page-footer__copyright {
+  display: flex;
+  align-items: center;
 }
